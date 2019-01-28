@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="game.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+    <div>
+        <button id="crsbtn01" onclick="selectCross()"></button>
+        <button id="crlbtn01" onclick="selectCircle()"></button>
+    </div>
+    <div>
+    <input class="count" id="crs_count01" disabled>
+     <input class="count" id="crl_count01" disabled>   
+    
+    </div>
+    
+
+<table >
+  <tr>
+    <td id="cel11" class="cel-class" onclick="clickCell(this)"><i id="resetselection_01" class="fa fa-undo" onclick="resetcell(this.parentElement)"></i></td>
+    <td id="cel12" class="cel-class" onclick="clickCell(this)"><i id="resetselection_02" class="fa fa-undo" onclick="resetcell(this.parentElement)"></i></td>
+    <td id="cel13" class="cel-class" onclick="clickCell(this)"><i id="resetselection_03" class="fa fa-undo" onclick="resetcell(this.parentElement)"></i></td>
+  </tr>
+  <tr>
+    <td id="cel21" class="cel-class" onclick="clickCell(this)"><i id="resetselection_04" class="fa fa-undo" onclick="resetcell(this.parentElement)"></i></td>
+    <td id="cel22" class="cel-class" onclick="clickCell(this)"><i id="resetselection_05" class="fa fa-undo" onclick="resetcell(this.parentElement)"></i></td>
+    <td id="cel23" class="cel-class" onclick="clickCell(this)"><i id="resetselection_06" class="fa fa-undo" onclick="resetcell(this.parentElement)"></i></td>
+  </tr>
+    <tr>
+    <td id="cel31" class="cel-class" onclick="clickCell(this)"><i id="resetselection_07" class="fa fa-undo" onclick="resetcell(this.parentElement)"></i></td>
+    <td id="cel32" class="cel-class" onclick="clickCell(this)"><i id="resetselection_08" class="fa fa-undo" onclick="resetcell(this.parentElement)"></i></td>
+    <td id="cel33" class="cel-class" onclick="clickCell(this)"><i id="resetselection_09" class="fa fa-undo" onclick="resetcell(this.parentElement)"></i></td>
+  </tr>
+</table>
+    
+    
+    <div id="wonpopup01" class="wonpopup">
+    <div id="wonpopup_content01" class="wonpopup_content">
+        <p>You Won!</p><br>
+        <button id="reset_btn_01" class="reset_btn">Reset</button>
+    <button id="cont_btn_01" class="cont_btn" onclick="resetGame()">Continue</button> 
+            
+    </div>
+    </div>
+    
+    
+    
+    
+    
+<script type="text/javascript" src="game.js"></script>    
+</body>
+</html>
